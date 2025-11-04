@@ -1,8 +1,8 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:darkness_dungeon/interface/bar_life_component.dart';
-import 'package:darkness_dungeon/player/knight.dart';
+import 'package:darkness_dungeon/player/lumberjack.dart';
 
-class KnightInterface extends GameInterface {
+class LumberjackInterface extends GameInterface {
   late Sprite keySprite;
 
   @override
@@ -21,7 +21,7 @@ class KnightInterface extends GameInterface {
   }
 
   void _drawKey(Canvas c) {
-    if (gameRef.player != null && (gameRef.player as Knight).containKey) {
+    if (gameRef.player != null && (gameRef.player as Lumberjack).containKey) {
       keySprite.renderRect(c, Rect.fromLTWH(150, 20, 35, 30));
     }
   }

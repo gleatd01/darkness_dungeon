@@ -8,11 +8,11 @@ import 'package:darkness_dungeon/enemies/boss.dart';
 import 'package:darkness_dungeon/enemies/goblin.dart';
 import 'package:darkness_dungeon/enemies/imp.dart';
 import 'package:darkness_dungeon/enemies/mini_boss.dart';
-import 'package:darkness_dungeon/interface/knight_interface.dart';
+import 'package:darkness_dungeon/interface/lumberjack_interface.dart';
 import 'package:darkness_dungeon/main.dart';
 import 'package:darkness_dungeon/npc/kid.dart';
 import 'package:darkness_dungeon/npc/wizard_npc.dart';
-import 'package:darkness_dungeon/player/knight.dart';
+import 'package:darkness_dungeon/player/lumberjack.dart';
 import 'package:darkness_dungeon/util/sounds.dart';
 import 'package:darkness_dungeon/widgets/game_controller.dart';
 import 'package:flutter/material.dart';
@@ -84,7 +84,7 @@ class GameState extends State<Game> {
         playerControllers: [
           joystick,
         ],
-        player: Knight(
+        player: Lumberjack(
           Vector2(2 * tileSize, 3 * tileSize),
         ),
         map: WorldMapByTiled(
@@ -106,7 +106,7 @@ class GameState extends State<Game> {
           },
         ),
         components: [GameController()],
-        interface: KnightInterface(),
+        interface: LumberjackInterface(),
         lightingColorGame: Colors.black.withOpacity(0.6),
         backgroundColor: Colors.grey[900]!,
         cameraConfig: CameraConfig(

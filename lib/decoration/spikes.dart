@@ -1,11 +1,11 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:darkness_dungeon/main.dart';
-import 'package:darkness_dungeon/player/knight.dart';
+import 'package:darkness_dungeon/player/lumberjack.dart';
 import 'package:darkness_dungeon/util/game_sprite_sheet.dart';
 
-class Spikes extends GameDecoration with Sensor<Knight> {
+class Spikes extends GameDecoration with Sensor<Lumberjack> {
   final double damage;
-  Knight? player;
+  Lumberjack? player;
 
   Spikes(Vector2 position, {this.damage = 60})
       : super.withAnimation(
@@ -15,7 +15,7 @@ class Spikes extends GameDecoration with Sensor<Knight> {
         );
 
   @override
-  void onContact(Knight collision) {
+  void onContact(Lumberjack collision) {
     player = collision;
   }
 
@@ -31,7 +31,7 @@ class Spikes extends GameDecoration with Sensor<Knight> {
   int get priority => LayerPriority.getComponentPriority(1);
 
   @override
-  void onContactExit(Knight component) {
+  void onContactExit(Lumberjack component) {
     player = null;
   }
 }

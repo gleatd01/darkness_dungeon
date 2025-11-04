@@ -1,6 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:darkness_dungeon/main.dart';
-import 'package:darkness_dungeon/player/knight.dart';
+import 'package:darkness_dungeon/player/lumberjack.dart';
 
 class DoorKey extends GameDecoration with Sensor {
   DoorKey(Vector2 position)
@@ -12,7 +12,7 @@ class DoorKey extends GameDecoration with Sensor {
 
   @override
   void onContact(GameComponent collision) {
-    if (collision is Knight) {
+    if (collision is Lumberjack) {
       collision.containKey = true;
       removeFromParent();
     }

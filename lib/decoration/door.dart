@@ -1,5 +1,5 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:darkness_dungeon/player/knight.dart';
+import 'package:darkness_dungeon/player/lumberjack.dart';
 import 'package:darkness_dungeon/util/game_sprite_sheet.dart';
 import 'package:darkness_dungeon/util/localization/strings_location.dart';
 import 'package:darkness_dungeon/util/player_sprite_sheet.dart';
@@ -28,9 +28,9 @@ class Door extends GameDecoration {
   @override
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
-    if (other is Knight) {
+    if (other is Lumberjack) {
       if (!open) {
-        Knight p = other;
+        Lumberjack p = other;
         if (p.containKey == true) {
           open = true;
           p.containKey = false;

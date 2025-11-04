@@ -53,7 +53,7 @@ class _MenuState extends State<Menu> {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Text(
-                "Darkness Dungeon",
+                "Lumberjack RPG",
                 style: TextStyle(
                     color: Colors.white, fontFamily: 'Normal', fontSize: 30.0),
               ),
