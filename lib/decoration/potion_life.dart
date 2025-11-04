@@ -1,8 +1,8 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:darkness_dungeon/main.dart';
-import 'package:darkness_dungeon/player/knight.dart';
+import 'package:darkness_dungeon/player/lumberjack.dart';
 
-class PotionLife extends GameDecoration with Sensor<Knight> {
+class PotionLife extends GameDecoration with Sensor<Lumberjack> {
   final Vector2 initPosition;
   final double life;
 
@@ -16,7 +16,7 @@ class PotionLife extends GameDecoration with Sensor<Knight> {
         );
 
   @override
-  void onContact(Knight player) {
+  void onContact(Lumberjack player) {
     if (!hasContact) {
       hasContact = true;
       _giveLife(player);

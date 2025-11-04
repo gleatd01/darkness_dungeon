@@ -5,9 +5,9 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 
-# Darkness Dungeon
+# Lumberjack RPG
 
-Game developed for the purpose of testing the use of the Bonfire package!
+Game developed for the purpose of testing the use of the Bonfire package! Converted from a dungeon crawler to a forest lumberjack adventure.
 
 ![](https://github.com/RafaelBarbosatec/darkness_dungeon/blob/master/media/print1.jpg)
 

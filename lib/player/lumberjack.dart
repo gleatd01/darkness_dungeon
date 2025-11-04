@@ -9,14 +9,14 @@ import 'package:darkness_dungeon/util/sounds.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Knight extends SimplePlayer with Lighting, BlockMovementCollision {
+class Lumberjack extends SimplePlayer with Lighting, BlockMovementCollision {
   double attack = 25;
   double stamina = 100;
   async.Timer? _timerStamina;
   bool containKey = false;
   bool showObserveEnemy = false;
 
-  Knight(Vector2 position)
+  Lumberjack(Vector2 position)
       : super(
           animation: PlayerSpriteSheet.playerAnimations(),
           size: Vector2.all(tileSize),
